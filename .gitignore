@@ -1,0 +1,4 @@
+.idea/
+tdlib*/
+.env
+!td/tdlib

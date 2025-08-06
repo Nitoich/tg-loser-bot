@@ -1,0 +1,1866 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.15.7-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/nitoich/td/build/CMakeFiles/4.0.3-dirty/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/nitoich/td/build/CMakeFiles/4.0.3-dirty/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_23ec4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_23ec4.dir/build.make CMakeFiles/cmTC_23ec4.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB'
+        Building CXX object CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250729 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_23ec4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccyn2qax.s
+        GNU C++17 (GCC) version 15.1.1 20250729 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250729, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 5afba4e7c01e6ad4b4ed7bcc3856614f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/'
+         as -v --64 -o CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccyn2qax.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_23ec4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23ec4.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250729 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_23ec4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_23ec4.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5amWg3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_23ec4 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        collect2 version 15.1.1 20250729
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5amWg3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_23ec4 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.44.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_23ec4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_23ec4.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_23ec4
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1] ==> [/usr/include/c++/15.1.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward] ==> [/usr/include/c++/15.1.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.1.1;/usr/include/c++/15.1.1/x86_64-pc-linux-gnu;/usr/include/c++/15.1.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_23ec4/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_23ec4.dir/build.make CMakeFiles/cmTC_23ec4.dir/build]
+        ignore line: [make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0BlwJB']
+        ignore line: [Building CXX object CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250729 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_23ec4.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccyn2qax.s]
+        ignore line: [GNU C++17 (GCC) version 15.1.1 20250729 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.1 20250729  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5afba4e7c01e6ad4b4ed7bcc3856614f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccyn2qax.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_23ec4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23ec4.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250729 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_23ec4' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_23ec4.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5amWg3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_23ec4 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc5amWg3.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_23ec4] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.1.1 20250729]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5amWg3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_23ec4 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_23ec4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f65ba/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f65ba.dir/build.make CMakeFiles/cmTC_f65ba.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI'
+        Building C object CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250729 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f65ba.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc0kKAZ6.s
+        GNU C23 (GCC) version 15.1.1 20250729 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.1.1 20250729, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 1787ea56368177f03c53ffbfd9c7a450
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o /tmp/cc0kKAZ6.s
+        GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f65ba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f65ba.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.1.1 20250729 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f65ba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f65ba.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYu8gZj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f65ba /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        collect2 version 15.1.1 20250729
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYu8gZj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f65ba /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.44.0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f65ba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f65ba.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -o cmTC_f65ba
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f65ba/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f65ba.dir/build.make CMakeFiles/cmTC_f65ba.dir/build]
+        ignore line: [make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-qznmbI']
+        ignore line: [Building C object CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250729 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f65ba.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc0kKAZ6.s]
+        ignore line: [GNU C23 (GCC) version 15.1.1 20250729 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.1.1 20250729  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 1787ea56368177f03c53ffbfd9c7a450]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o /tmp/cc0kKAZ6.s]
+        ignore line: [GNU assembler version 2.44.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.44.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f65ba]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f65ba.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.1.1 20250729 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f65ba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f65ba.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYu8gZj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f65ba /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccYu8gZj.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f65ba] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.1.1 20250729]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYu8gZj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f65ba /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_f65ba.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:106 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a5e19/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a5e19.dir/build.make CMakeFiles/cmTC_a5e19.dir/build
+        make[1]: вход в каталог «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta»
+        Building C object CMakeFiles/cmTC_a5e19.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a5e19.dir/src.c.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta/src.c
+        Linking C executable cmTC_a5e19
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5e19.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a5e19.dir/src.c.o -o cmTC_a5e19
+        make[1]: выход из каталога «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-snTQta»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:37 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_STD17"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_STD17"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5f03c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_5f03c.dir/build.make CMakeFiles/cmTC_5f03c.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag'
+        Building CXX object CMakeFiles/cmTC_5f03c.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STD17  -std=c++17 -o CMakeFiles/cmTC_5f03c.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag/src.cxx
+        Linking CXX executable cmTC_5f03c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f03c.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5f03c.dir/src.cxx.o -o cmTC_5f03c
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-RpASag'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:110 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e9e55/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e9e55.dir/build.make CMakeFiles/cmTC_e9e55.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS'
+        Building CXX object CMakeFiles/cmTC_e9e55.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall   -Wall -o CMakeFiles/cmTC_e9e55.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS/src.cxx
+        Linking CXX executable cmTC_e9e55
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9e55.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_e9e55.dir/src.cxx.o -o cmTC_e9e55
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-P7WLSS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:111 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_04991/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_04991.dir/build.make CMakeFiles/cmTC_04991.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs'
+        Building CXX object CMakeFiles/cmTC_04991.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra   -Wextra -o CMakeFiles/cmTC_04991.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs/src.cxx
+        Linking CXX executable cmTC_04991
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04991.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_04991.dir/src.cxx.o -o cmTC_04991
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-C7LvUs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:112 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_99d99/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_99d99.dir/build.make CMakeFiles/cmTC_99d99.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2'
+        Building CXX object CMakeFiles/cmTC_99d99.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2   -Wimplicit-fallthrough=2 -o CMakeFiles/cmTC_99d99.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2/src.cxx
+        Linking CXX executable cmTC_99d99
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99d99.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_99d99.dir/src.cxx.o -o cmTC_99d99
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-gLevu2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:113 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WPOINTER_ARITH"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WPOINTER_ARITH"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9c8f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c9c8f.dir/build.make CMakeFiles/cmTC_c9c8f.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs'
+        Building CXX object CMakeFiles/cmTC_c9c8f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WPOINTER_ARITH  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith   -Wpointer-arith -o CMakeFiles/cmTC_c9c8f.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs/src.cxx
+        Linking CXX executable cmTC_c9c8f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9c8f.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_c9c8f.dir/src.cxx.o -o cmTC_c9c8f
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WkVRKs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:114 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCAST_QUAL"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCAST_QUAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0ca52/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0ca52.dir/build.make CMakeFiles/cmTC_0ca52.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo'
+        Building CXX object CMakeFiles/cmTC_0ca52.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCAST_QUAL  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual   -Wcast-qual -o CMakeFiles/cmTC_0ca52.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo/src.cxx
+        Linking CXX executable cmTC_0ca52
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ca52.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_0ca52.dir/src.cxx.o -o cmTC_0ca52
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-WRdzRo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:115 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSIGN_COMPARE"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSIGN_COMPARE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_af2b5/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_af2b5.dir/build.make CMakeFiles/cmTC_af2b5.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy'
+        Building CXX object CMakeFiles/cmTC_af2b5.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSIGN_COMPARE  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare   -Wsign-compare -o CMakeFiles/cmTC_af2b5.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy/src.cxx
+        Linking CXX executable cmTC_af2b5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af2b5.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_af2b5.dir/src.cxx.o -o cmTC_af2b5
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-lhRMIy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:116 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDUPLICATED_BRANCHES"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDUPLICATED_BRANCHES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5a388/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_5a388.dir/build.make CMakeFiles/cmTC_5a388.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg'
+        Building CXX object CMakeFiles/cmTC_5a388.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches   -Wduplicated-branches -o CMakeFiles/cmTC_5a388.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg/src.cxx
+        Linking CXX executable cmTC_5a388
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a388.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_5a388.dir/src.cxx.o -o cmTC_5a388
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-INAfYg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:117 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDUPLICATED_COND"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDUPLICATED_COND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0147c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0147c.dir/build.make CMakeFiles/cmTC_0147c.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD'
+        Building CXX object CMakeFiles/cmTC_0147c.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WDUPLICATED_COND  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond   -Wduplicated-cond -o CMakeFiles/cmTC_0147c.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD/src.cxx
+        Linking CXX executable cmTC_0147c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0147c.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_0147c.dir/src.cxx.o -o cmTC_0147c
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-t9rROD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:118 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALLOC_ZERO"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALLOC_ZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e070b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e070b.dir/build.make CMakeFiles/cmTC_e070b.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec'
+        Building CXX object CMakeFiles/cmTC_e070b.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WALLOC_ZERO  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero   -Walloc-zero -o CMakeFiles/cmTC_e070b.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec/src.cxx
+        Linking CXX executable cmTC_e070b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e070b.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_e070b.dir/src.cxx.o -o cmTC_e070b
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-i97nec'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:119 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WLOGICAL_OP"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WLOGICAL_OP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_27d3e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_27d3e.dir/build.make CMakeFiles/cmTC_27d3e.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD'
+        Building CXX object CMakeFiles/cmTC_27d3e.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WLOGICAL_OP  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op   -Wlogical-op -o CMakeFiles/cmTC_27d3e.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD/src.cxx
+        Linking CXX executable cmTC_27d3e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27d3e.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_27d3e.dir/src.cxx.o -o cmTC_27d3e
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-LUSrYD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:120 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b2a1/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1b2a1.dir/build.make CMakeFiles/cmTC_1b2a1.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69'
+        Building CXX object CMakeFiles/cmTC_1b2a1.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WTAUTOLOGICAL_COMPARE  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare   -Wtautological-compare -o CMakeFiles/cmTC_1b2a1.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69/src.cxx
+        Linking CXX executable cmTC_1b2a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b2a1.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_1b2a1.dir/src.cxx.o -o cmTC_1b2a1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-fb2D69'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:122 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WVLA"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WVLA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_279f9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_279f9.dir/build.make CMakeFiles/cmTC_279f9.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC'
+        Building CXX object CMakeFiles/cmTC_279f9.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WVLA  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla   -Wvla -o CMakeFiles/cmTC_279f9.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC/src.cxx
+        Linking CXX executable cmTC_279f9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_279f9.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_279f9.dir/src.cxx.o -o cmTC_279f9
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-0O5wSC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:123 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNON_VIRTUAL_DTOR"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNON_VIRTUAL_DTOR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_17177/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_17177.dir/build.make CMakeFiles/cmTC_17177.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg'
+        Building CXX object CMakeFiles/cmTC_17177.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WNON_VIRTUAL_DTOR  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor   -Wnon-virtual-dtor -o CMakeFiles/cmTC_17177.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg/src.cxx
+        Linking CXX executable cmTC_17177
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17177.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_17177.dir/src.cxx.o -o cmTC_17177
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-vHaICg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:124 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_PARAMETER"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_PARAMETER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b7a0a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b7a0a.dir/build.make CMakeFiles/cmTC_b7a0a.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI'
+        Building CXX object CMakeFiles/cmTC_b7a0a.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WUNUSED_PARAMETER  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter   -Wunused-parameter -o CMakeFiles/cmTC_b7a0a.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI/src.cxx
+        Linking CXX executable cmTC_b7a0a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7a0a.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_b7a0a.dir/src.cxx.o -o cmTC_b7a0a
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-m5mKXI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:125 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCONVERSION"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e8573/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e8573.dir/build.make CMakeFiles/cmTC_e8573.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN'
+        Building CXX object CMakeFiles/cmTC_e8573.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCONVERSION  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion   -Wconversion -o CMakeFiles/cmTC_e8573.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN/src.cxx
+        Linking CXX executable cmTC_e8573
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8573.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_e8573.dir/src.cxx.o -o cmTC_e8573
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-yAX7jN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:126 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSIGN_CONVERSION"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSIGN_CONVERSION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_95e52/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_95e52.dir/build.make CMakeFiles/cmTC_95e52.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH'
+        Building CXX object CMakeFiles/cmTC_95e52.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSIGN_CONVERSION  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion   -Wsign-conversion -o CMakeFiles/cmTC_95e52.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH/src.cxx
+        Linking CXX executable cmTC_95e52
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95e52.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_95e52.dir/src.cxx.o -o cmTC_95e52
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Xv0eQH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:127 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WCXX17_COMPAT_PEDANTIC"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WCXX17_COMPAT_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b0ab0/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b0ab0.dir/build.make CMakeFiles/cmTC_b0ab0.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX'
+        Building CXX object CMakeFiles/cmTC_b0ab0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WCXX17_COMPAT_PEDANTIC  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++17-compat-pedantic   -Wc++17-compat-pedantic -o CMakeFiles/cmTC_b0ab0.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX/src.cxx
+        c++: error: unrecognized command-line option '-Wc++17-compat-pedantic'
+        c++: error: unrecognized command-line option '-Wc++17-compat-pedantic'
+        make[1]: *** [CMakeFiles/cmTC_b0ab0.dir/build.make:81: CMakeFiles/cmTC_b0ab0.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dnyXmX'
+        make: *** [Makefile:134: cmTC_b0ab0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:128 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WDEPRECATED"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WDEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_73ffb/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_73ffb.dir/build.make CMakeFiles/cmTC_73ffb.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m'
+        Building CXX object CMakeFiles/cmTC_73ffb.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WDEPRECATED  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated   -Wdeprecated -o CMakeFiles/cmTC_73ffb.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m/src.cxx
+        Linking CXX executable cmTC_73ffb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73ffb.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_73ffb.dir/src.cxx.o -o cmTC_73ffb
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-AR8P7m'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:129 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b0f3f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b0f3f.dir/build.make CMakeFiles/cmTC_b0f3f.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK'
+        Building CXX object CMakeFiles/cmTC_b0f3f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WUNUSED_COMMAND_LINE_ARGUMENT  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wno-unused-command-line-argument   -Wunused-command-line-argument -o CMakeFiles/cmTC_b0f3f.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK/src.cxx
+        c++: error: unrecognized command-line option '-Wunused-command-line-argument'; did you mean '-Wunused-dummy-argument'?
+        make[1]: *** [CMakeFiles/cmTC_b0f3f.dir/build.make:81: CMakeFiles/cmTC_b0f3f.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-iAJgIK'
+        make: *** [Makefile:134: cmTC_b0f3f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:130 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_QUNUSED_ARGUMENTS"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_QUNUSED_ARGUMENTS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6dbd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c6dbd.dir/build.make CMakeFiles/cmTC_c6dbd.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY'
+        Building CXX object CMakeFiles/cmTC_c6dbd.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_QUNUSED_ARGUMENTS  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Qunused-arguments   -Qunused-arguments -o CMakeFiles/cmTC_c6dbd.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY/src.cxx
+        c++: error: unrecognized command-line option '-Qunused-arguments'
+        c++: error: unrecognized command-line option '-Qunused-arguments'
+        make[1]: *** [CMakeFiles/cmTC_c6dbd.dir/build.make:81: CMakeFiles/cmTC_c6dbd.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-sCDdCY'
+        make: *** [Makefile:134: cmTC_c6dbd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:131 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5c042/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_5c042.dir/build.make CMakeFiles/cmTC_5c042.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4'
+        Building CXX object CMakeFiles/cmTC_5c042.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WUNKNOWN_WARNING_OPTION  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wno-unknown-warning-option   -Wunknown-warning-option -o CMakeFiles/cmTC_5c042.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4/src.cxx
+        c++: error: unrecognized command-line option '-Wunknown-warning-option'
+        make[1]: *** [CMakeFiles/cmTC_5c042.dir/build.make:81: CMakeFiles/cmTC_5c042.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-tpyQu4'
+        make: *** [Makefile:134: cmTC_5c042/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:132 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WODR"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WODR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1d8e9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1d8e9.dir/build.make CMakeFiles/cmTC_1d8e9.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo'
+        Building CXX object CMakeFiles/cmTC_1d8e9.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WODR  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr   -Wodr -o CMakeFiles/cmTC_1d8e9.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo/src.cxx
+        Linking CXX executable cmTC_1d8e9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d8e9.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_1d8e9.dir/src.cxx.o -o cmTC_1d8e9
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eyTvAo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:133 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c15a2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c15a2.dir/build.make CMakeFiles/cmTC_c15a2.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB'
+        Building CXX object CMakeFiles/cmTC_c15a2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging   -flto-odr-type-merging -o CMakeFiles/cmTC_c15a2.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB/src.cxx
+        Linking CXX executable cmTC_c15a2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c15a2.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_c15a2.dir/src.cxx.o -o cmTC_c15a2
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-xnKfAB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:134 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WPSABI"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WPSABI"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e12f7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e12f7.dir/build.make CMakeFiles/cmTC_e12f7.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF'
+        Building CXX object CMakeFiles/cmTC_e12f7.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WPSABI  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi   -Wpsabi -o CMakeFiles/cmTC_e12f7.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF/src.cxx
+        Linking CXX executable cmTC_e12f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e12f7.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_e12f7.dir/src.cxx.o -o cmTC_e12f7
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-Dhr3BF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:135 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_674a0/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_674a0.dir/build.make CMakeFiles/cmTC_674a0.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns'
+        Building CXX object CMakeFiles/cmTC_674a0.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WUNUSED_MEMBER_FUNCTION  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wunused-member-function   -Wunused-member-function -o CMakeFiles/cmTC_674a0.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns/src.cxx
+        c++: error: unrecognized command-line option '-Wunused-member-function'; did you mean '-Wunused-function'?
+        c++: error: unrecognized command-line option '-Wunused-member-function'; did you mean '-Wunused-function'?
+        make[1]: *** [CMakeFiles/cmTC_674a0.dir/build.make:81: CMakeFiles/cmTC_674a0.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-3jN4ns'
+        make: *** [Makefile:134: cmTC_674a0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:136 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_11382/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_11382.dir/build.make CMakeFiles/cmTC_11382.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO'
+        Building CXX object CMakeFiles/cmTC_11382.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WUNUSED_PRIVATE_FIELD  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wunused-private-field   -Wunused-private-field -o CMakeFiles/cmTC_11382.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO/src.cxx
+        c++: error: unrecognized command-line option '-Wunused-private-field'
+        c++: error: unrecognized command-line option '-Wunused-private-field'
+        make[1]: *** [CMakeFiles/cmTC_11382.dir/build.make:81: CMakeFiles/cmTC_11382.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-dfPvqO'
+        make: *** [Makefile:134: cmTC_11382/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:150 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WMAYBE_UNINITIALIZED"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WMAYBE_UNINITIALIZED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_951c2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_951c2.dir/build.make CMakeFiles/cmTC_951c2.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA'
+        Building CXX object CMakeFiles/cmTC_951c2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WMAYBE_UNINITIALIZED  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized   -Wmaybe-uninitialized -o CMakeFiles/cmTC_951c2.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA/src.cxx
+        Linking CXX executable cmTC_951c2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_951c2.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_951c2.dir/src.cxx.o -o cmTC_951c2
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-kQ4keA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:159 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WREDUNDANT_MOVE"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WREDUNDANT_MOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eb472/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_eb472.dir/build.make CMakeFiles/cmTC_eb472.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s'
+        Building CXX object CMakeFiles/cmTC_eb472.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WREDUNDANT_MOVE  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move   -Wredundant-move -o CMakeFiles/cmTC_eb472.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s/src.cxx
+        Linking CXX executable cmTC_eb472
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb472.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_eb472.dir/src.cxx.o -o cmTC_eb472
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-koH83s'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "CMake/AddCXXCompilerFlag.cmake:39 (check_cxx_compiler_flag)"
+      - "CMake/TdSetUpCompiler.cmake:162 (add_cxx_compiler_flag)"
+      - "CMakeLists.txt:113 (td_set_up_compiler)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRINGOP_OVERFLOW"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRINGOP_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4db68/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4db68.dir/build.make CMakeFiles/cmTC_4db68.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8'
+        Building CXX object CMakeFiles/cmTC_4db68.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXX_FLAG_WSTRINGOP_OVERFLOW  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wstringop-overflow -o CMakeFiles/cmTC_4db68.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8/src.cxx
+        Linking CXX executable cmTC_4db68
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4db68.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_4db68.dir/src.cxx.o -o cmTC_4db68
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-hAC0i8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMake/FindAtomics.cmake:43 (check_cxx_source_compiles)"
+      - "tdutils/CMakeLists.txt:409 (find_package)"
+    checks:
+      - "Performing Test ATOMICS_FOUND"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "ATOMICS_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a67d9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a67d9.dir/build.make CMakeFiles/cmTC_a67d9.dir/build
+        make[1]: вход в каталог «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4»
+        Building CXX object CMakeFiles/cmTC_a67d9.dir/src.cxx.o
+        /usr/bin/c++ -DATOMICS_FOUND  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE -o CMakeFiles/cmTC_a67d9.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4/src.cxx
+        Linking CXX executable cmTC_a67d9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a67d9.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_a67d9.dir/src.cxx.o -o cmTC_a67d9
+        make[1]: выход из каталога «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-bE3AX4»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:244 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:425 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:1314 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ebe70/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ebe70.dir/build.make CMakeFiles/cmTC_ebe70.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u'
+        Building CXX object CMakeFiles/cmTC_ebe70.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_ebe70.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u/src.cxx
+        Linking CXX executable cmTC_ebe70
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebe70.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_ebe70.dir/src.cxx.o -o cmTC_ebe70
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-PFMo1u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:245 (check_compiler_flag)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:425 (_test_compiler_hidden_visibility)"
+      - "CMakeLists.txt:1314 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0f96d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0f96d.dir/build.make CMakeFiles/cmTC_0f96d.dir/build
+        make[1]: Entering directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy'
+        Building CXX object CMakeFiles/cmTC_0f96d.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_0f96d.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy/src.cxx
+        Linking CXX executable cmTC_0f96d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f96d.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_0f96d.dir/src.cxx.o -o cmTC_0f96d
+        make[1]: Leaving directory '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-MisOIy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSourceCompiles.cmake:89 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:212 (check_source_compiles)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "/usr/share/cmake/Modules/GenerateExportHeader.cmake:426 (_test_compiler_has_deprecated)"
+      - "CMakeLists.txt:1314 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cb116/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cb116.dir/build.make CMakeFiles/cmTC_cb116.dir/build
+        make[1]: вход в каталог «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P»
+        Building CXX object CMakeFiles/cmTC_cb116.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE -o CMakeFiles/cmTC_cb116.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P/src.cxx
+        /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P/src.cxx: In function «int main()»:
+        /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P/src.cxx:2:33: предупреждение: «int somefunc()» устарело [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P/src.cxx:1:37: замечание: объявлено здесь
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        Linking CXX executable cmTC_cb116
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb116.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_cb116.dir/src.cxx.o -o cmTC_cb116
+        make[1]: выход из каталога «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-h4lB2P»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMake/FindReadline.cmake:16 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:1337 (find_package)"
+    checks:
+      - "Performing Test GNU_READLINE_FOUND"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "GNU_READLINE_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c1503/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c1503.dir/build.make CMakeFiles/cmTC_c1503.dir/build
+        make[1]: вход в каталог «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz»
+        Building CXX object CMakeFiles/cmTC_c1503.dir/src.cxx.o
+        /usr/bin/c++ -DGNU_READLINE_FOUND  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE -o CMakeFiles/cmTC_c1503.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz/src.cxx
+        Linking CXX executable cmTC_c1503
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1503.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_c1503.dir/src.cxx.o -o cmTC_c1503  /usr/lib/libreadline.so
+        make[1]: выход из каталога «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-eLaghz»
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:1346 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test USABLE_READLINE_FOUND"
+    directories:
+      source: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8"
+      binary: "/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -Wl,--gc-sections -Wl,--exclude-libs,ALL"
+      CMAKE_MODULE_PATH: "/home/nitoich/td/CMake;"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "USABLE_READLINE_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_39b69/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_39b69.dir/build.make CMakeFiles/cmTC_39b69.dir/build
+        make[1]: вход в каталог «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8»
+        Building CXX object CMakeFiles/cmTC_39b69.dir/src.cxx.o
+        /usr/bin/c++ -DUSABLE_READLINE_FOUND  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow  -fPIE -o CMakeFiles/cmTC_39b69.dir/src.cxx.o -c /home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8/src.cxx
+        Linking CXX executable cmTC_39b69
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39b69.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++17 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wimplicit-fallthrough=2 -Wpointer-arith -Wcast-qual -Wsign-compare -Wduplicated-branches -Wduplicated-cond -Walloc-zero -Wlogical-op -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wdeprecated -Wodr -flto-odr-type-merging -Wno-psabi -Wno-maybe-uninitialized -Wno-redundant-move -Wno-stringop-overflow   -Wl,--gc-sections -Wl,--exclude-libs,ALL  CMakeFiles/cmTC_39b69.dir/src.cxx.o -o cmTC_39b69  /usr/lib/libreadline.so
+        make[1]: выход из каталога «/home/nitoich/td/build/CMakeFiles/CMakeScratch/TryCompile-JMWPt8»
+        
+      exitCode: 0
+...

@@ -1,0 +1,19 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nitoich/td/build/cmake_install.cmake",
+		"/home/nitoich/td/build/tdtl/cmake_install.cmake",
+		"/home/nitoich/td/build/tdutils/cmake_install.cmake",
+		"/home/nitoich/td/build/tdutils/generate/cmake_install.cmake",
+		"/home/nitoich/td/build/td/generate/cmake_install.cmake",
+		"/home/nitoich/td/build/td/generate/tl-parser/cmake_install.cmake",
+		"/home/nitoich/td/build/tde2e/cmake_install.cmake",
+		"/home/nitoich/td/build/tdactor/cmake_install.cmake",
+		"/home/nitoich/td/build/tdnet/cmake_install.cmake",
+		"/home/nitoich/td/build/sqlite/cmake_install.cmake",
+		"/home/nitoich/td/build/tddb/cmake_install.cmake",
+		"/home/nitoich/td/build/test/cmake_install.cmake",
+		"/home/nitoich/td/build/benchmark/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
