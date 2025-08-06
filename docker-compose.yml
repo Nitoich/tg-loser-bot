@@ -1,11 +1,10 @@
 version: '3.8'
 
 services:
-  myapp:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: tg-golang
     restart: unless-stopped
     ports:
       - "8080:8080"
