@@ -62,4 +62,6 @@ COPY --from=go-builder /src/app .
 
 run npm install -g @tobyg74/tiktok-api-dl
 
+COPY .env .env
+
 CMD ["./app"]
