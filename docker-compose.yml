@@ -12,3 +12,5 @@ services:
       - TZ=Europe/Moscow
     volumes:
       - ./tdlib-db:/app/tdlib-db
+    env_file:
+      - .env
