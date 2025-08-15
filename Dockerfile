@@ -60,8 +60,10 @@ COPY --from=go-builder /src/app .
 
 #COPY ./tdlib-db-n ./tdlib-db
 
-run npm install -g @tobyg74/tiktok-api-dl
+RUN npm install -g @tobyg74/tiktok-api-dl
 
 COPY .env .env
+
+EXPOSE 8080
 
 CMD ["./app"]

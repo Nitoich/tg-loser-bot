@@ -8,6 +8,8 @@ services:
     restart: unless-stopped
     environment:
       - TZ=Europe/Moscow
+    ports:
+      - "8080:8080"
     volumes:
       - ./tdlib-db:/app/tdlib-db
     env_file:
