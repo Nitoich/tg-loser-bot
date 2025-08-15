@@ -2,9 +2,13 @@ package main
 
 import (
 	"bufio"
+	"encoding/base64"
+	"fmt"
 	"github.com/joho/godotenv"
+	"github.com/skip2/go-qrcode"
 	"github.com/zelenin/go-tdlib/client"
 	"log"
+	"net/http"
 	"os"
 	"os/exec"
 	"regexp"
@@ -29,6 +33,57 @@ func extractPaths(output string) []string {
 	return paths
 }
 
+type qrCodeAuthorizer struct {
+	params *client.SetTdlibParametersRequest
+	link   chan string
+}
+
+func newQrCodeAuthorizer(p *client.SetTdlibParametersRequest) *qrCodeAuthorizer {
+	return &qrCodeAuthorizer{
+		params: p,
+		link:   make(chan string, 1),
+	}
+}
+
+func (a *qrCodeAuthorizer) Handle(c *client.Client, state client.AuthorizationState) error {
+	switch state.AuthorizationStateType() {
+	case client.TypeAuthorizationStateWaitTdlibParameters:
+		_, err := c.SetTdlibParameters(a.params)
+		return err
+	case client.TypeAuthorizationStateWaitPhoneNumber:
+		_, err := c.RequestQrCodeAuthentication(&client.RequestQrCodeAuthenticationRequest{})
+		return err
+	case client.TypeAuthorizationStateWaitOtherDeviceConfirmation:
+		s := state.(*client.AuthorizationStateWaitOtherDeviceConfirmation)
+		a.link <- s.Link
+		return nil
+	case client.TypeAuthorizationStateReady,
+		client.TypeAuthorizationStateClosed,
+		client.TypeAuthorizationStateClosing:
+		return nil
+	}
+	return client.NotSupportedAuthorizationState(state)
+}
+
+func (a *qrCodeAuthorizer) Close() {
+	close(a.link)
+}
+
+func serveQR(a *qrCodeAuthorizer) {
+	link := <-a.link
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		png, err := qrcode.Encode(link, qrcode.Medium, 256)
+		if err != nil {
+			http.Error(w, "QR generation error", http.StatusInternalServerError)
+			return
+		}
+		encoded := base64.StdEncoding.EncodeToString(png)
+		fmt.Fprintf(w, "<html><body><img src=\"data:image/png;base64,%s\"/></body></html>", encoded)
+	})
+	log.Println("Откройте http://localhost:8080 для сканирования QR-кода")
+	_ = http.ListenAndServe(":8080", nil)
+}
+
 func main() {
 	env_err := godotenv.Load()
 	if env_err != nil {
@@ -51,10 +106,9 @@ func main() {
 		ApplicationVersion:  "0.1",
 	}
 
-	// Авторизация
-	authorizer := client.ClientAuthorizer(params)
-
-	go client.CliInteractor(authorizer) // Ждёт ввод телефона, кода, пароля
+	// Авторизация через QR-код
+	authorizer := newQrCodeAuthorizer(params)
+	go serveQR(authorizer)
 
 	var tdlibClient *client.Client
 	var err error
